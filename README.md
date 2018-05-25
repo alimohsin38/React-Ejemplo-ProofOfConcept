@@ -1,7 +1,7 @@
 # React-Ejemplo-ProofOfConcept
 __Proof Of Concept__
 
-[Public Link:]  (https://github.com/alimohsin38/React-Ejemplo-ProofOfConcept)
+[Public Link](https://github.com/alimohsin38/React-Ejemplo-ProofOfConcept)
 ```
 Default Username: Adam
 Password: adam
