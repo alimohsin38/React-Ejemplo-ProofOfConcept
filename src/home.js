@@ -94,8 +94,8 @@ class Home extends Component{
 				
 				<div className={"container-fluid bgWhite"}>
 					<div className={"row"}>
-						<div className={"con tainer noPadding"}>
-							<div className={"col displayFlex noPadding"}>
+						<div className={"con tainer noPadding"} style={{"margin":"0px auto"}}>
+							<div className={"col displayFlex noPadding"} style={{"max-width":"70%"}}>
 								<BootstrapSlider />
 							</div>
 						</div>

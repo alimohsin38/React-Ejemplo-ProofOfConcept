@@ -37,7 +37,7 @@ form[name='message']{text-align: center;margin: 43px 0px !important;}
 
 
 .loginContainer{display: flex;height: auto;position: fixed;top: 0px;bottom: 0px;left: 0px;right: 0px;justify-content: center;align-items: center;background-color: #272727b8;z-index: -2;overflow: auto;/*@include border-radius(6px);*/
-.loginBk{background-image: url($baseImg);background-position: center, center, center, center; background-size: cover, cover;background-repeat: no-repeat;    filter: blur(10px);position: fixed;top: 0px;left: 0px;right: 0px;bottom: 0px;z-index: -1;background-attachment: fixed;}
+.loginBk{background-image: url($baseImg);background-position: center, center, center, center; background-size: cover, cover;background-repeat: no-repeat; /*filter: blur(10px);*/position: fixed;top: 0px;left: 0px;right: 0px;bottom: 0px;z-index: -1;background-attachment: fixed;}
 .loginPopup{width: 32vw;height: auto;margin: 0px 0px 0px 0px;padding: 10px 10px;box-sizing: border-box;box-shadow: inset 0px 0px 50px 0px #000, 0px 0px 50px 0px #fff/*none*//*$loginPopupBoxShadow*/;background: $bgBlack/*transparent*/;min-height: 225px;@include border-radius(5px);opacity: 0;transform: rotateX(90deg);transition: all 1s 0.0s;
 h3{display: block;margin: 10px 0px 10px 0px;text-align: center;text-decoration: none;font-size: 3.3vw;position: relative;
 i.loader{display: none;font-size: 2.6vw !important;position: absolute;top: 17px;right: auto;left: auto;bottom: auto;margin: 0px 0px 0px 7px;transition: all 0.3s 0.0s;opacity: 0;}}
@@ -90,7 +90,7 @@ li:hover>a{background-color: $navhover;color: $fontcolor;}}}
 .searchBox{display: inline-block;width: auto;position: relative;padding: 0px 0px;margin: 0px 0px 0px 10px;outline: 0px;height: auto;line-height: 2em;
 i{display: inline-block;width: auto;height: auto;font-size: 1.6vw;color: #888;transition: all 0.3s 0.0s;cursor: pointer;}
 i:hover{color: $textBlack}
-input[name="search"]{z-index: 98;opacity: 0;position: absolute;left: auto;right: 15px;top: 44px;bottom: auto;color: #888;font-size: 15px;width: 0px;height: auto;margin: 0px 0px;padding: 0px 5px;@include border-radius(3px);border: 1px solid $navhover/*#000*/;box-shadow: none;transition: all 0.3s 0.0s;display: block;}
+input[name="search"]{height: 32px !important;z-index: 98;opacity: 0;position: absolute;left: auto;right: 15px;top: 44px;bottom: auto;color: #888;font-size: 15px;width: 0px;height: auto;margin: 0px 0px;padding: 0px 5px;@include border-radius(3px);border: 1px solid $navhover/*#000*/;box-shadow: none;transition: all 0.3s 0.0s;display: block;}
 input[name="search"]:focus, input[name="search"]:active{outline: none;box-shadow: inset 0px 0px 9px 0px #aaa /*0px 2px 5px 0px #555*/;}
 font{display: inline-flex;margin: 0px 6px;padding: 0px 0px;font-size: 23px;color: $navhover;font-weight: 100;align-items: center;justify-content: center;}}
 label[name='userNameHome']{display: inline-block;margin: 0px 5px 0px 0px;padding: 0px 4px;width: auto;height: auto;font-size: 14px;color: #337AB7;font-weight: 700;cursor: pointer;text-shadow: none;border-bottom: 1px solid #337AB7;border-radius: 3px;line-height: 1em;}

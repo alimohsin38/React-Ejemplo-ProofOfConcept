@@ -13,13 +13,13 @@ class BootstrapSlider extends Component{
 	
 	render(){
 		return(
-			<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
+			<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" style={{"width":"100%"}}>
+                <ol className="carousel-indicators" style={{"left":"417px"}}>
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div className="carousel-inner" role="listbox">
+                <div className="carousel-inner" role="listbox" style={{"width":"142.9%"}}>
                     <div className="carousel-item active">
                         <img className="d-block img-fluid" src="../images/slider1.jpg" alt="First slide"/>
                     </div>
@@ -34,7 +34,7 @@ class BootstrapSlider extends Component{
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style={{"right":"-400px"}}>
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
