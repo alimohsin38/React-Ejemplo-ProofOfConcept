@@ -36,6 +36,19 @@ class Logincomponent extends Component{
 	}
 	
 	
+	componentDidMount() {
+		if(navigator.userAgent.search("Firefox") >= 0){	
+			$("input[name='password']").attr("type", "password");
+			$("i[name='showHide']").css({"display":"none"});
+		}
+	}
+
+	
+	componentWillUnmount() {
+
+	}
+  
+	
 	userNameChange(event){
 		this.setState({userName: event.target.value});
 		$("label[name='usernameValidation']").css({"opacity":"0", "transform": "translateX(-179px)"});
@@ -63,17 +76,25 @@ class Logincomponent extends Component{
 	clearPassword(){
 		if(this.state.password == 'Password'){
 			this.setState({password: ''});
-			$("input[name='password']").attr("type", "password");
-			$("input[name='password']").css({"color":"#fff"});
+			$("input[name='password']").css({"color":"#fff"});			
+			if(navigator.userAgent.search("Firefox") >= 0){	
+				$("input[name='password']").attr("type", "password");
+			}else{
+				$("input[name='password']").attr("type", "password");
+			}
 		}
 	}
 	revertPassword(){
 		if(this.state.password == ''){
 			this.setState({password: 'Password'});
 			$("label[name='passwordValidation']").css({"opacity":"1", "transform": "translateX(0px)"});
-			$("input[name='password']").attr("type", "text");
 			$("input[name='password']").css({"color":"#888", "transition":"all 0.0s 0.0s"});
-			$("form span i").css({"color": "#888"});
+			$("form span i").css({"color": "#888"});			
+			if(navigator.userAgent.search("Firefox") >= 0){	
+				$("input[name='password']").attr("type", "password");
+			}else{
+				$("input[name='password']").attr("type", "text");
+			}
 		}
 	}
 	
