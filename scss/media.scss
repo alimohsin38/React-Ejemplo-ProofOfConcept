@@ -1,0 +1,92 @@
+@media screen and (min-width: 1901px){
+	a.rightArrow {right: -569px;}
+	ol.carousel-indicators {left: 659px;}
+}
+
+
+@media screen and (max-width: 1900px) and (min-width: 1200px){
+	.col-xl-8{max-width: 48% !important;}
+	a.rightArrow {right: -350px;}
+	.loginContainer .loginPopup form label a{font-size: 16px;}
+	.loginContainer .loginPopup h5{font-size: 19px;}
+}
+
+
+@media screen and (max-width: 1900px) and (min-width: 1272px){
+	.col-xl-8{max-width: 55% !important;}
+}
+
+
+@media screen and (max-width: 1900px) and (min-width: 1532px){
+	.col-xl-8{max-width: 68% !important;}
+}
+
+
+@media screen and (max-width: 1900px) and (min-width: 1419px){
+	a.rightArrow {right: -424px;}
+}
+
+
+@media screen and (max-width: 1900px) and (min-width: 1645px){
+	a.rightArrow {right: -490px;}
+}
+
+
+@media screen and (max-width: 1199px){
+	.loginContainer .loginPopup{min-height: 177px;}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	a.rightArrow {right: -294px;}
+	.loginContainer .loginPopup form label a{font-size: 16px;}
+	.loginContainer .loginPopup h5{font-size: 17px;}
+	.logo .logoContainer a{font-size: 44px;}
+	.nav ul li ul{top: 47px;}
+	.searchBox input[name="search"]{right: 8px;top: 41px;}
+	.loginContainer .loginPopup h3 i.loader{top: 12px;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.loginContainer .loginPopup form label a{font-size: 13px;}
+	.loginContainer .loginPopup form input[type="text"], .loginContainer .loginPopup form input[type="password"]{font-size: 13px;}
+	.loginContainer .loginPopup form label[name="firstNameValidation"], .loginContainer .loginPopup form label[name="lastNameValidation"], .loginContainer .loginPopup form label[name="usernameValidation"], .loginContainer .loginPopup form label[name="passwordValidation"], .loginContainer .loginPopup form label[name="re-enterPasswordValidation"], .loginContainer .loginPopup form label[name="passwordNotMatchedValidation"], .loginContainer .loginPopup form label[name="forgotValidation"], .loginContainer .loginPopup form label[name="phoneNumberValidation"]{font-size: 12px;}
+	.loginContainer .loginPopup h5{font-size: 15px;}
+	.loginContainer .loginPopup form input[type="submit"], .loginContainer .loginPopup form input[type="button"], .loginContainer .loginPopup form a{font-size: 14px;}
+	.logo .logoContainer a{font-size: 35px;}
+	.loginContainer .loginPopup h3 i.loader{top: 9px;}
+	.nav ul li a{font-size: 13px;padding: 11px 8px;}
+	.logOut a{font-size: 12px;padding: 2px 5px;}
+	.nav ul li ul{top: 40px;}
+	.searchBox input[name="search"]{height: 30px !important;right: 6px;top: 37px;}
+	.searchBox i{font-size: 19px;}
+	a.rightArrow {right: -229px;}
+}
+
+
+@media screen and (min-width: 894px) and (max-width: 991px){
+	a.rightArrow {right: -268px;}
+}
+
+
+@media screen and (max-width: 991px){
+	.loginContainer .loginPopup{min-height: 155px;}
+}
+
+
+@media screen and (max-width: 767px){
+	.loginContainer .loginPopup form label a{font-size: 15px;}
+	.loginContainer .loginPopup form span i{font-size: 27px;}	
+	.loginContainer .loginPopup h5{font-size: 17px;}
+	.loginContainer .loginPopup {position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;width: auto;height: auto;}	
+	.loginContainer .loginPopup h3 {font-size: 33px;}
+	.userNamePsswordIncorrect {font-size: 15px;margin: 0px 0px 0px 0px;}
+	.loginContainer .loginPopup h3 i.loader {font-size: 22px !important;top: 14px;}
+	.loginContainer .loginPopup form label[name="firstNameValidation"], .loginContainer .loginPopup form label[name="lastNameValidation"], .loginContainer .loginPopup form label[name="usernameValidation"], .loginContainer .loginPopup form label[name="passwordValidation"], .loginContainer .loginPopup form label[name="re-enterPasswordValidation"], .loginContainer .loginPopup form label[name="passwordNotMatchedValidation"], .loginContainer .loginPopup form label[name="forgotValidation"], .loginContainer .loginPopup form label[name="phoneNumberValidation"]{font-size: 14px;}
+	.loginContainer .loginPopup form input[type="text"], .loginContainer .loginPopup form input[type="password"]{font-size: 16px;}
+	.loginContainer .loginPopup form span i {font-size: 24px;}	
+	.loginContainer .loginPopup form input[type="submit"], .loginContainer .loginPopup form input[type="button"], .loginContainer .loginPopup form a{font-size: 15px;}
+	.textSizeOverride {font-size: 20px !important;margin: 0px 0px 0px 0px !important}
+	.loginContainer .loginPopup form{padding: 0px 0px;}
+}

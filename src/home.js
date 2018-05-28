@@ -63,17 +63,17 @@ class Home extends Component{
 					<div className={"row"}>
 						<div className={"container noPadding"}>
 							<div className={"col displayFlex noPadding"}>
-								<div className={"col-3 noPadding logo"}>
+								<div className={"col-3 col-xl-2 col-lg-2 col-md-2 noPadding logo"}>
 									<div className={"logoContainer"}>
 										<Link to={"./home"}>GYM</Link>
 									</div>
 								</div>
 								
-								<div className={"col-6 noPadding nav"}>
+								<div className={"col-6 col-xl-8 col-lg-7 col-md-7 noPadding nav"}>
 									<NavigationStrip value={MenuItems} />
 								</div>
 								
-								<div className={"col-3 noPadding"}>
+								<div className={"col-3 col-md-3 noPadding"}>
 									<div className={"searchBox"}>
 										<i name={"searchIcon"} onClick={this.openSearchBox} className={"fa fa-search"}></i>
 										<input tabIndex={"1"} onFocus={this.clearSearch} onBlur={this.revertsearch} onClick={this.clearSearch} onChange={this.search} type="text" name={"search"} value={this.state.search} />
@@ -95,7 +95,7 @@ class Home extends Component{
 				<div className={"container-fluid bgWhite"}>
 					<div className={"row"}>
 						<div className={"con tainer noPadding"} style={{"margin":"0px auto"}}>
-							<div className={"col displayFlex noPadding"} style={{"max-width":"70%"}}>
+							<div className={"col displayFlex noPadding sliderContainerResponsive"}>
 								<BootstrapSlider />
 							</div>
 						</div>
