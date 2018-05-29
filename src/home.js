@@ -10,12 +10,13 @@ import {userNameAndPassword} from './logincomponent';
 class Home extends Component{
 	constructor(props){
 		super(props);
-		this.state = {search: "Search...", serchOpened: true, logOut: "Logout"};
+		this.state = {search: "Search...", serchOpened: true, logOut: "Logout", navigationToggle: true};
 		this.openSearchBox = this.openSearchBox.bind(this);
 		this.search = this.search.bind(this);
 		this.clearSearch = this.clearSearch.bind(this);
 		this.revertsearch = this.revertsearch.bind(this);
 		this.loggedOut = this.loggedOut.bind(this);
+		this.navigationToggle = this.navigationToggle.bind(this);
 	}
 	
 	
@@ -55,6 +56,16 @@ class Home extends Component{
 	}
 	
 	
+	navigationToggle(){
+		this.setState(prevState => ({navigationToggle: !prevState.navigationToggle}));
+		if(this.state.navigationToggle){
+			$(".nav ul").css({"display":"block"});
+		}else{
+			$(".nav ul").css({"display":"none"});
+		}
+	}
+	
+	
 	render(){
 		const MenuItems = ["home", "pages", "elements", "classes", "trainers", "about", "blog"];
 		return(
@@ -63,17 +74,20 @@ class Home extends Component{
 					<div className={"row"}>
 						<div className={"container noPadding"}>
 							<div className={"col displayFlex noPadding"}>
-								<div className={"col-3 col-xl-2 col-lg-2 col-md-2 noPadding logo"}>
+								<div className={"col-4 col-xl-2 col-lg-2 col-md-2 col-sm-4 noPadding logo"}>
 									<div className={"logoContainer"}>
 										<Link to={"./home"}>GYM</Link>
 									</div>
 								</div>
 								
-								<div className={"col-6 col-xl-8 col-lg-7 col-md-7 noPadding nav"}>
+								<div className={"col-4 col-xl-8 col-lg-7 col-md-7 col-sm-4 noPadding nav"}>
 									<NavigationStrip value={MenuItems} />
+									<div onClick={this.navigationToggle} className={"toggleButton"}>
+										<span></span><span></span><span></span>
+									</div>
 								</div>
 								
-								<div className={"col-3 col-md-3 noPadding"}>
+								<div className={"col-4 col-xl-3 col-lg-3 col-md-3 col-sm-4 noPadding xsAlignRignt"}>
 									<div className={"searchBox"}>
 										<i name={"searchIcon"} onClick={this.openSearchBox} className={"fa fa-search"}></i>
 										<input tabIndex={"1"} onFocus={this.clearSearch} onBlur={this.revertsearch} onClick={this.clearSearch} onChange={this.search} type="text" name={"search"} value={this.state.search} />

@@ -75,6 +75,11 @@
 }
 
 
+@media screen and (min-width: 768px){
+	.nav>ul{display:flex !important;}
+}
+
+
 @media screen and (max-width: 767px){
 	.loginContainer .loginPopup form label a{font-size: 15px;}
 	.loginContainer .loginPopup form span i{font-size: 27px;}	
@@ -88,5 +93,74 @@
 	.loginContainer .loginPopup form span i {font-size: 24px;}	
 	.loginContainer .loginPopup form input[type="submit"], .loginContainer .loginPopup form input[type="button"], .loginContainer .loginPopup form a{font-size: 15px;}
 	.textSizeOverride {font-size: 20px !important;margin: 0px 0px 0px 0px !important}
-	.loginContainer .loginPopup form{padding: 0px 0px;}
+	.loginContainer .loginPopup form{padding: 0px 0px;}	
+	.logo .logoContainer a{font-size: 32px;}
+	.footer label{font-size: 10px;}
+	a.rightArrow {right: -190px;}
+	.logOut a{font-size: 12px;padding: 1px 6px;}
+	label[name='userNameHome']{font-size: 11px;}
+	.searchBox i{font-size: 19px;}
+	.searchBox input[name="search"]{height: 28px !important;right: 6px;top: 34px;}	
+	.toggleButton{display: block;width: auto;height: auto;margin: auto -4px auto auto;padding: 0px 2px;border: 0px solid #337ab7;border-radius: 2px;cursor: pointer;
+	span{padding: 1px 11px;background-color: #337ab7;margin: 4px 0px;display: block;width: auto;height: auto;border-radius: 6px;}}
+	.nav{position: static !important;}
+	.nav ul{display:none;position: absolute;left: 0px;right: 0px;top: 35px;bottom: 21px;z-index: 10;
+	li{display: block;background: #fff;
+	a{font-size: 15px;}}
+	ul{top: 50px !important;right: 0px !important;
+	li{border-bottom: 1px solid #999;
+	a{font-size: 14px !important;text-align: center !important;padding: 10px 10px !important;}}}}
+}
+
+
+@media screen and (max-width: 637px){
+	a.rightArrow {right: -156px;}
+}
+
+
+@media screen and (max-width: 575px){
+	.logo .logoContainer a{padding: 0px 15px;}
+	.xsAlignRignt{text-align: center;padding: 0px 10px 0px 0px !important;}
+	.toggleButton{margin: auto -17px auto auto;z-index: 1;}
+}
+
+
+@media screen and (max-width: 555px){
+	.toggleButton{margin: 0px 0px 0px 0px;left: 97px;position: absolute;right: auto;top: auto;bottom: 4px;}
+	.searchBox ~ a{position: absolute;top: auto;bottom: 0px;right: auto;left: -66%;}
+	label[name='userNameHome']{font-size: 14px;}
+}
+
+
+@media screen and (max-width: 520px){
+	a.rightArrow {right: -132px;}
+}
+
+
+@media screen and (max-width: 440px){
+	a.rightArrow {right: -105px;}
+}
+
+
+@media screen and (max-width: 350px){
+	a.rightArrow {right: -90px;}
+}
+
+
+@media screen and (max-width: 323px){
+	.logOut a{font-size: 9px;padding: 1px 4px;}
+	.searchBox{margin: 0px 0px 0px 0px;
+	font{margin: 0px 0px;}}
+	.searchBox ~ a{display:none;}
+	.searchBox input[name="search"]{right: -41px;}
+}
+
+
+@media screen and (max-width: 304px){
+	a.rightArrow {right: -73px;}
+}
+
+
+@media screen and (max-width: 244px){
+	a.rightArrow {right: -59px;}
 }
