@@ -20,6 +20,24 @@ class Home extends Component{
 	}
 	
 	
+	updateDimensions() {
+		if(navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1){
+			$("#BootstrapSlider").css({"width":"100%"});
+		}		
+	}
+
+
+	componentDidMount() {
+		this.updateDimensions();
+		window.addEventListener("resize", this.updateDimensions.bind(this));
+	}
+
+
+	componentWillUnmount() {
+		window.removeEventListener("resize", this.updateDimensions.bind(this));
+	}
+	
+	
 	openSearchBox(event){		
 		this.setState(prevState => ({serchOpened: !prevState.serchOpened}));		
 		if(this.state.serchOpened){
@@ -108,7 +126,7 @@ class Home extends Component{
 				
 				<div className={"container-fluid bgWhite"}>
 					<div className={"row"}>
-						<div className={"con tainer noPadding"} style={{"margin":"0px auto"}}>
+						<div id={"BootstrapSlider"} className={"con tainer noPadding"} style={{"margin":"0px auto"}}>
 							<div className={"col displayFlex noPadding sliderContainerResponsive"}>
 								<BootstrapSlider />
 							</div>
