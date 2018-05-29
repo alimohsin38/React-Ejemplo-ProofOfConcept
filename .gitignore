@@ -2,3 +2,5 @@ node_modules
 .sass-cache
 yarn.lock
 build
+_config.yml
+package-lock.json
