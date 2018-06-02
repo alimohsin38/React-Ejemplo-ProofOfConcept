@@ -8,7 +8,7 @@ module.exports = {
 	performance: {hints: false}, //To mute the performance warnings for the production build...
 	entry: {
 		app: ['babel-polyfill', './src/index.js']
-    },
+    },//entry point of project i.e index.js file.
 	devtool: 'inline-source-map', //Know exact file name whicn contains error in your code in console...
 	devServer: {
 	  contentBase: path.join(__dirname, "./"),
