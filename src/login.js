@@ -22,6 +22,18 @@ class Login extends Component{
 			
 		}else if(this.props.state == 2){
 			return (<Signup />)
+			
+		}else if(this.props.state == 3){
+			return (<h1>aerobics</h1>)
+			
+		}else if(this.props.state == 4){
+			return (<h1>swimming</h1>)
+			
+		}else if(this.props.state == 5){
+			return (<h1>yoga package</h1>)
+			
+		}else if(this.props.state == 6){
+			return (<h1>kick boxing</h1>)
 		}
 	}
 }

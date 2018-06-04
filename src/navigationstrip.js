@@ -47,7 +47,7 @@ class NavigationStrip extends Component{
 				this.setState({value: "elements"});
 				
 			}else if(dataTarget.indexOf("classes") > -1){
-				subMenu.push("classes Item 1", "classes Item 2", "classes Item 3", "classes Item 4");
+				subMenu.push("aerobics", "swimming", "yoga package", "kick boxing");
 				this.setState({value: "classes"});
 				
 			}else if(dataTarget.indexOf("trainers") > -1){
