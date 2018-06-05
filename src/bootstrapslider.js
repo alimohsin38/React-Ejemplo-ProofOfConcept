@@ -11,6 +11,17 @@ class BootstrapSlider extends Component{
 	}
 	
 	
+	componentDidMount() {
+		$("#menuStrip li a").removeClass("active");
+		$("#menuStrip>li:first-child>a").addClass("active");
+	}
+	
+
+	componentWillUnmount() {
+		
+	}
+	
+	
 	render(){
 		return(
 			<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" style={{"width":"100%"}}>

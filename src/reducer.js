@@ -26,6 +26,13 @@ export const reducer = (state=0, action) => {
 		
 		case "kick boxing":
 			return state = 6;
+		
+		case "home":
+			return state = 7;
+		
+		case "payment":
+			return state = 8;
+			
 		default:
 			return state;
 	}

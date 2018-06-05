@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {$, popper, bootstrap} from './App';
 import SubmenuItems from './submenus';
 import {BrowserRouter as Router, Route, Link, withRouter} from "react-router-dom";
+import {store} from './logincomponent';
+import { connect } from 'react-redux';
 
 
 const subMenu = [];
@@ -25,8 +27,12 @@ class NavigationStrip extends Component{
 	
 	
 	handleClick(event){
+		const clickedVal = $((event.target)).text();
 		$("#menuStrip li a").removeClass("active");
 		$($(event.target).parent().children()[0]).addClass("active");		
+		if(clickedVal == "home"){
+			store.dispatch({type: clickedVal});			
+		}	
 	}
 	
 	

@@ -14,8 +14,8 @@ class SubmenuItems extends Component{
 	
 	
 	itemClicked(event){
-		const clickedVal = $((event.target)).text();		
-		if(clickedVal == "aerobics"){
+		const clickedVal = $((event.target)).text();
+		if(clickedVal == "aerobics"){			
 			store.dispatch({type: clickedVal});
 			
 		}else if(clickedVal == "swimming"){
@@ -26,7 +26,7 @@ class SubmenuItems extends Component{
 			
 		}else if(clickedVal == "kick boxing"){
 			store.dispatch({type: clickedVal});
-		}		
+		}
 	}
 	
 	

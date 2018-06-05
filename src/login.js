@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {$, popper, bootstrap} from './App';
 import Logincomponent, {store} from './logincomponent';
 import Forgotpassword from './forgotpasswordcomponent';
+import Home from './home';
 import Signup from './signupcomponent';
 import { connect } from 'react-redux';
 
@@ -21,19 +22,11 @@ class Login extends Component{
 			return (<Logincomponent />)
 			
 		}else if(this.props.state == 2){
-			return (<Signup />)
+			return (<Signup />)	
 			
-		}else if(this.props.state == 3){
-			return (<h1>aerobics</h1>)
+		}else if(this.props.state == 3 || this.props.state == 4 || this.props.state == 5 || this.props.state == 6 || this.props.state == 7 || this.props.state == 8){
+			return (<Home />)
 			
-		}else if(this.props.state == 4){
-			return (<h1>swimming</h1>)
-			
-		}else if(this.props.state == 5){
-			return (<h1>yoga package</h1>)
-			
-		}else if(this.props.state == 6){
-			return (<h1>kick boxing</h1>)
 		}
 	}
 }
