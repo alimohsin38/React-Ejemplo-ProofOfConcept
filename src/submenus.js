@@ -21,7 +21,7 @@ class SubmenuItems extends Component{
 		}else if(clickedVal == "swimming"){
 			store.dispatch({type: clickedVal});
 			
-		}else if(clickedVal == "yoga package"){
+		}else if(clickedVal == "yoga"){
 			store.dispatch({type: clickedVal});
 			
 		}else if(clickedVal == "kick boxing"){

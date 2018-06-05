@@ -21,7 +21,7 @@ export const reducer = (state=0, action) => {
 		case "swimming":
 			return state = 4;
 		
-		case "yoga package":
+		case "yoga":
 			return state = 5;
 		
 		case "kick boxing":

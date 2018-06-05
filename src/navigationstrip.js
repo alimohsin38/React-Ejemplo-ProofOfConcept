@@ -53,7 +53,7 @@ class NavigationStrip extends Component{
 				this.setState({value: "elements"});
 				
 			}else if(dataTarget.indexOf("classes") > -1){
-				subMenu.push("aerobics", "swimming", "yoga package", "kick boxing");
+				subMenu.push("yoga", "aerobics", "swimming", "kick boxing");
 				this.setState({value: "classes"});
 				
 			}else if(dataTarget.indexOf("trainers") > -1){
