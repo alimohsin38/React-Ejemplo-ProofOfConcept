@@ -2,7 +2,8 @@
 __Proof Of Concept__
 ###### Public Link: *https://github.com/alimohsin38/React-Ejemplo-ProofOfConcept* :link:
 ```
-Default Username: Adam
+Default Username & Password is:
+Username: Adam
 Password: adam
 ```
 *React-Ejemplo will support in IE10 and upper version of internet explorer also it will support IE Edge(Default), chrome, mozilla, safari11, opera.*
